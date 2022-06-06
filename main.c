@@ -48,7 +48,7 @@ int main(void) {
     printf("                                ¨í g :    Go with Program    \n");
     printf("                                ¨î s :    Step with Program  \n");
     printf("                                ¨ï j :    jump with Program  \n");
-    printf("                                ¨ð h :    help               \n");
+    printf("                                ¨ð help :   Print Command List   \n");
     printf("\n\n");
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     while (EXIT) {
@@ -109,7 +109,7 @@ int main(void) {
             jumpProgram(temp_v1);
         }
         else if (!strcmp(cmd, "sm")) {//set memory
-            printf("> Enter the Memory :");
+            printf("> Enter the Memory : ");
             scanf("%s", val1, 20 * sizeof(char));
             getchar();
             printf("> Enter the Value : ");
@@ -129,13 +129,18 @@ int main(void) {
                 printf("[Error] Memory\n");
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
             }
-            else printf("Success set memory\n");
+            else
+            {
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 1);
+                printf("Success set memory\n");
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+            }
         }
         else if (!strcmp(cmd, "sr")) {//set register
-            printf("> Enter the Register :");
+            printf("> Enter the Register : ");
             scanf("%s", val1);
             getchar();
-            printf("> Enter the Value :");
+            printf("> Enter the Value : ");
             scanf("%s", val2);
             getchar();
             temp_v1 = atoi(val1);
@@ -179,7 +184,7 @@ int main(void) {
             printf("¨í g :    Go with Program    \n");
             printf("¨î s :    Step with Program  \n");
             printf("¨ï j :    jump with Program  \n");
-            printf("¨ð h :    help               \n");
+            printf("¨ð help :   Print Command List   \n");
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
             printf("\n\n");
         }

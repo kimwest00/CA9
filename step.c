@@ -26,7 +26,6 @@ int stepProgram() {
 
     if (instruction.B == 0) return 1;
 
-    //   // 2. Instruction Decode: ���ɾ� �ؼ�
     unsigned int opcode = instruction.RI.opc;
     unsigned int funct = instruction.RI.fct;
     unsigned int rs = instruction.RI.rs;
@@ -35,7 +34,7 @@ int stepProgram() {
     unsigned int sh = instruction.RI.sht;
     unsigned int address = instruction.JI.address;
     unsigned int u_imm = instruction.II.operand & 0xffff;
-    int imm = instruction.II.operand; // Sign Extendted
+    int imm = instruction.II.operand; 
 
     if (opcode == R_FORMAT) {
         switch (funct) {
