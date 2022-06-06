@@ -1,4 +1,4 @@
-# ComputerArchitecture 12조
+# ComputerArchitecture 9조
 ## 22-1학기 컴퓨터 구조 과목 기말프로젝트
 ### MIPS 시뮬레이터 구현하기
 
