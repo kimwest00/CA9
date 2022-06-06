@@ -32,7 +32,7 @@ void loadProgram(const char* filename) {
     FILE* fptr = NULL;
 
     if ((fptr = fopen(filename, "rb")) == NULL) {
-        printf("ÆÄÀÏÀÐ±â ¿À·ù \n");
+        printf("파일이 열리지않았습니다 \n");
         return;
     }
 
