@@ -26,18 +26,18 @@ int stepProgram() {
 
     if (instruction.B == 0) return 1;
 
-    unsigned int opcode = instruction.RI.opc;
-    unsigned int funct = instruction.RI.fct;
+    unsigned int opc = instruction.RI.opc;
+    unsigned int fct = instruction.RI.fct;
     unsigned int rs = instruction.RI.rs;
     unsigned int rt = instruction.RI.rt;
     unsigned int rd = instruction.RI.rd;
     unsigned int sh = instruction.RI.sht;
     unsigned int address = instruction.JI.address;
-    unsigned int u_imm = instruction.II.operand & 0xffff;
-    int imm = instruction.II.operand; 
+    unsigned int imm = instruction.II.operand & 0xffff;
+    int signExtendedimm = instruction.II.operand; 
 
-    if (opcode == R_FORMAT) {
-        switch (funct) {
+    if (opc == R_FORMAT) {
+        switch (fct) {
         case SLL:     return sll(rd, rt, sh);
         case SRL:     return srl(rd, rt, sh);
         case SRA:     return sra(rd, rt, sh);
@@ -57,23 +57,23 @@ int stepProgram() {
         }
     }
     else {
-        switch (opcode) {
+        switch (opc) {
         case J:    return j(address);
         case JAL:  return jal(address);
-        case BLTZ: return bltz(rs, 0, imm);
-        case BEQ:  return beq(rs, rt, imm);
-        case BNE:  return bne(rs, rt, imm);
-        case ADDI: return addi(rt, rs, imm);
-        case SLTI: return slti(rt, rs, imm);
-        case ANDI: return andi(rt, rs, u_imm);
-        case ORI:  return ori(rt, rs, u_imm);
-        case XORI: return xori(rt, rs, u_imm);
-        case LUI:  return lui(rt, u_imm);
-        case LW:   return lw(rt, imm, rs);
-        case SW:   return sw(rt, imm, rs);
-        case LB:   return lb(rt, imm, rs);
-        case SB:   return sb(rt, imm, rs);
-        case LBU:  return lbu(rt, imm, rs);
+        case BLTZ: return bltz(rs, 0, signExtendedimm);
+        case BEQ:  return beq(rs, rt, signExtendedimm);
+        case BNE:  return bne(rs, rt, signExtendedimm);
+        case ADDI: return addi(rt, rs, signExtendedimm);
+        case SLTI: return slti(rt, rs, signExtendedimm);
+        case ANDI: return andi(rt, rs, imm);
+        case ORI:  return ori(rt, rs, imm);
+        case XORI: return xori(rt, rs, imm);
+        case LUI:  return lui(rt, imm);
+        case LW:   return lw(rt, signExtendedimm, rs);
+        case SW:   return sw(rt, signExtendedimm, rs);
+        case LB:   return lb(rt, signExtendedimm, rs);
+        case SB:   return sb(rt, signExtendedimm, rs);
+        case LBU:  return lbu(rt, signExtendedimm, rs);
         default:   printf("[Unknown] Instuction\n");
         }
     }

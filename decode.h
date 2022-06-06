@@ -25,7 +25,7 @@ union IR {
 };
 
 // OPCODE
-enum OPCODE {
+enum OPC {
     R_FORMAT = 0,
     BLTZ = 1,
     J = 2,
@@ -48,7 +48,7 @@ enum OPCODE {
 };
 
 // FUNCT
-enum FUNCT {
+enum FCT {
     SLL = 0,
     SRL = 2,
     SRA = 3,
@@ -68,11 +68,11 @@ enum FUNCT {
 };
 
 
-static char OPCODE_STR[48][10] = {
+static char OPC_NAME[48][10] = {
   "R-format", "bltz", "j", "jal", "beq", "bne", "", "", "addi", "", "slti", "", "andi", "ori", "xori", "lui", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "lb", "", "", "lw", "lbu", "", "", "", "sb", "", "", "sw", "", "", "", ""
 };
 
-static char FUNCT_STR[48][10] = {
+static char FCT_NAME[48][10] = {
   "sll", "", "srl", "sra", "", "", "", "", "jr", "", "", "", "syscall", "", "", "", "", "mfhi", "", "mflo", "", "", "", "", "", "mul", "", "", "", "", "", "", "add", "", "sub", "", "and", "or", "xor", "nor", "", "", "slt", "", "", "", "", ""
 };
 

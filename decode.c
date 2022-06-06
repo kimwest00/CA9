@@ -13,13 +13,13 @@ void getInstructionStr(unsigned int inst, char** str) {
 
     unsigned int opc = instruction.RI.opc;
     unsigned int fct = instruction.RI.fct;
-    char* op = opc ? OPCODE_STR[opc] : FUNCT_STR[fct];
+    char* op = opc ? OPC_NAME[opc] : FCT_NAME[fct];
     char* rs = REGISTER_NAME[instruction.RI.rs];
     char* rt = REGISTER_NAME[instruction.RI.rt];
     char* rd = REGISTER_NAME[instruction.RI.rd];
     unsigned int sh = instruction.RI.sht;
     unsigned int address = instruction.JI.address;
-    unsigned int immediate = instruction.II.operand;
+    unsigned int imm = instruction.II.operand;
     int signExtendedimm = (int)instruction.II.operand; // Sign Extendted
 
     if (opc == R_FORMAT) {
@@ -55,10 +55,10 @@ void getInstructionStr(unsigned int inst, char** str) {
             sprintf(*str, "%s %s, %s, %d", op, rt, rs, signExtendedimm);
             break;
         case ANDI: case ORI: case XORI:
-            sprintf(*str, "%s %s, %s, %d", op, rt, rs, immediate);
+            sprintf(*str, "%s %s, %s, %d", op, rt, rs, imm);
             break;
         case LUI:
-            sprintf(*str, "%s %s, %d", op, rt, immediate);
+            sprintf(*str, "%s %s, %d", op, rt, imm);
             break;
         case LW: case SW: case LB: case SB: case LBU:
             sprintf(*str, "%s %s, %d(%s)", op, rt, signExtendedimm, rs);
