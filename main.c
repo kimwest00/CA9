@@ -24,31 +24,31 @@ int main(void) {
 
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 
-    system("title ÄÄÇ»ÅÍ ±¸Á¶ ÇÁ·ÎÁ§Æ®");
-    printf("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤\n");
-    printf("¦¢       ¡á¡á¡á    ¡á    ¡á     ¡á¡á   ¡á     ¡á      ¡á  ¡á¡á¡á  ¡á¡á¡á¡á¡á    ¡á¡á        ¡á      ¦¢\n");
-    printf("¦¢     ¡á               ¡á ¡á  ¡á ¡á   ¡á   ¡á       ¡á       ¡á       ¡á     ¡á     ¡á    ¡á ¡á¡á¡á¦¢\n");
-    printf("¦¢      ¡á¡á¡á    ¡á   ¡á    ¡á    ¡á   ¡á    ¡á    ¡á    ¡á ¡á      ¡á    ¡á        ¡á  ¡á¡á       ¦¢\n");
-    printf("¦¢           ¡á   ¡á    ¡á    ¡á    ¡á   ¡á    ¡á  ¡á    ¡á    ¡á   ¡á    ¡á        ¡á  ¡á          ¦¢\n");
-    printf("¦¢          ¡á   ¡á    ¡á    ¡á    ¡á   ¡á    ¡á   ¡á    ¡á ¡á¡á   ¡á     ¡á     ¡á     ¡á          ¦¢\n");
-    printf("¦¢  ¡á¡á¡á¡á    ¡á    ¡á    ¡á   ¡á    ¡á¡á¡á     ¡á           ¡á    ¡á    ¡á ¡á    ¡á              ¦¢\n");
-    printf("¦¢                                                                                                  ¦¢\n");
-    printf("¦¢                                                                [ÄÄÇ»ÅÍ ±¸Á¶ ÇÁ·ÎÁ§Æ®]            ¦¢\n");
-    printf("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥\n");
+    system("title ì»´í“¨í„° êµ¬ì¡° í”„ë¡œì íŠ¸");
+    printf("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”\n");
+    printf("â”‚       â– â– â–     â–     â–      â– â–    â–      â–       â–   â– â– â–   â– â– â– â– â–     â– â–         â–       â”‚\n");
+    printf("â”‚     â–                â–  â–   â–  â–    â–    â–        â–        â–        â–      â–      â–     â–  â– â– â– â”‚\n");
+    printf("â”‚      â– â– â–     â–    â–     â–     â–    â–     â–     â–     â–  â–       â–     â–         â–   â– â–        â”‚\n");
+    printf("â”‚           â–    â–     â–     â–     â–    â–     â–   â–     â–     â–    â–     â–         â–   â–           â”‚\n");
+    printf("â”‚          â–    â–     â–     â–     â–    â–     â–    â–     â–  â– â–    â–      â–      â–      â–           â”‚\n");
+    printf("â”‚  â– â– â– â–     â–     â–     â–    â–     â– â– â–      â–            â–     â–     â–  â–     â–               â”‚\n");
+    printf("â”‚                                                                                                  â”‚\n");
+    printf("â”‚                                                                [ì»´í“¨í„° êµ¬ì¡° í”„ë¡œì íŠ¸]            â”‚\n");
+    printf("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜\n");
     printf("\n");
     printf("\n");
     printf("\n");
-    printf("                                     [ °¡´ÉÇÑ ¸í·É¾î ]   \n");
-    printf("                                ¨ç x :    Exit Program       \n");
-    printf("                                ¨è l :    Load Program       \n");
-    printf("                                ¨é m :    View Memory        \n");
-    printf("                                ¨ê sm :   Set Memory        \n");
-    printf("                                ¨ë r :    View Register      \n");
-    printf("                                ¨ì sr :   Set Register      \n");
-    printf("                                ¨í g :    Go with Program    \n");
-    printf("                                ¨î s :    Step with Program  \n");
-    printf("                                ¨ï j :    jump with Program  \n");
-    printf("                                ¨ð help :   Print Command List   \n");
+    printf("                                     [ ê°€ëŠ¥í•œ ëª…ë ¹ì–´ ]   \n");
+    printf("                                â‘  x :    Exit Program       \n");
+    printf("                                â‘¡ l :    Load Program       \n");
+    printf("                                â‘¢ m :    View Memory        \n");
+    printf("                                â‘£ sm :   Set Memory        \n");
+    printf("                                â‘¤ r :    View Register      \n");
+    printf("                                â‘¥ sr :   Set Register      \n");
+    printf("                                â‘¦ g :    Go with Program    \n");
+    printf("                                â‘§ s :    Step with Program  \n");
+    printf("                                â‘¨ j :    jump with Program  \n");
+    printf("                                â‘© help :   Print Command List   \n");
     printf("\n\n");
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     while (EXIT) {
@@ -117,7 +117,9 @@ int main(void) {
             getchar();
             temp_v1 = (unsigned int)strtoul(val1, NULL, 16);
             temp_v2 = (unsigned int)strtoul(val2, NULL, 16);
-            if (!temp_v2)
+
+
+            if (temp_v2==-1)
             {
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
                 printf("[Error] Value\n");
@@ -146,13 +148,13 @@ int main(void) {
             temp_v1 = atoi(val1);
             temp_v2 = (unsigned int)strtoul(val2, NULL, 16);
 
-            if (!temp_v2)
+            if (temp_v2 == -1)
             {
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
                 printf("[Error] Value\n");
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
             }
-            if ((temp_v1 > 31) || (temp_v1 < 0))
+            else if ((temp_v1 > 31) || (temp_v1 < 0))
             {
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
                 printf("[Error] Register\n");
@@ -175,16 +177,16 @@ int main(void) {
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
             printf("\n\n");
             printf("    [ Command] \n");
-            printf("¨ç x :    Exit Program       \n");
-            printf("¨è l :    Load Program       \n");
-            printf("¨é m :    View Memory        \n");
-            printf("¨ê sm :   Set Memory        \n");
-            printf("¨ë r :    View Register      \n");
-            printf("¨ì sr :   Set Register      \n");
-            printf("¨í g :    Go with Program    \n");
-            printf("¨î s :    Step with Program  \n");
-            printf("¨ï j :    jump with Program  \n");
-            printf("¨ð help :   Print Command List   \n");
+            printf("â‘  x :    Exit Program       \n");
+            printf("â‘¡ l :    Load Program       \n");
+            printf("â‘¢ m :    View Memory        \n");
+            printf("â‘£ sm :   Set Memory        \n");
+            printf("â‘¤ r :    View Register      \n");
+            printf("â‘¥ sr :   Set Register      \n");
+            printf("â‘¦ g :    Go with Program    \n");
+            printf("â‘§ s :    Step with Program  \n");
+            printf("â‘¨ j :    jump with Program  \n");
+            printf("â‘© help :   Print Command List   \n");
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
             printf("\n\n");
         }
